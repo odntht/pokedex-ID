@@ -126,5 +126,10 @@
       }
     }
   },
-  "defaultProject": "pokedex-ID"
+  "defaultProject": "pokedex-ID",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
+  }
 }
