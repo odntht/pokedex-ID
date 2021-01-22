@@ -1,18 +1,1 @@
-<mat-grid-list cols="2">
-<!-- Um card de Pokemon -->
-    <mat-grid-tile mat-raised-button color="primary" *ngFor="let pokemon of pokemonList">
-        <mat-card  (click)="onSelect(pokemon)">
-                <mat-card-title>
-                    {{pokemon.name}}
-                </mat-card-title>
-                <mat-card-subtitle>
-                    Tipo(s): {{pokemon.type}}
-                </mat-card-subtitle>
-                <mat-card-content>
-                    <img [src]="pokemon.img" [alt]="pokemon.name">
-                    <br>
-                    ID: {{pokemon.id}}
-                </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+{{message}}
