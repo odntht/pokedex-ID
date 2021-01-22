@@ -1,4 +1,4 @@
-<mat-grid-list cols="6" rowHeight="450px">
+<mat-grid-list cols="6" rowHeight="450px" *ngIf="pokemonList.cards">
 <!-- Um card de Pokemon -->
     <mat-grid-tile mat-raised-button color="primary" *ngFor="let pokemon of pokemonList.cards">
         <mat-card  (click)="onSelect(pokemon)">

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { PokemonInfo } from './pokemon-list';
+import { PokemonListInfo } from './pokemon-list';
 import { PokemonListService } from "./pokemon-list.service";
 
 @Component({
@@ -9,13 +9,13 @@ import { PokemonListService } from "./pokemon-list.service";
   styleUrls: ['./pokemon-list.component.css']
 })
 export class PokemonListComponent {
-  public pokemonList: PokemonInfo[] = [];
+  public pokemonList: PokemonListInfo[] = [];
 
   constructor(private router: Router, private _pokemonListService: PokemonListService) {
   }
 
   ngOnInit(): void {
-    
+
   }
 
 

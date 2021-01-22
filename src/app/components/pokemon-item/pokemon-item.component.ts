@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from "@angular/router";
-import { PokemonInfo } from '../pokemon-list/pokemon-list';
+import { PokemonListInfo } from '../pokemon-list/pokemon-list';
 import { PokemonListService } from "../pokemon-list/pokemon-list.service";
 
 @Component({
@@ -9,7 +9,7 @@ import { PokemonListService } from "../pokemon-list/pokemon-list.service";
   styleUrls: ['./pokemon-item.component.css']
 })
 export class PokemonItemComponent implements OnInit {
-  public pokemonList: PokemonInfo[] = [];
+  public pokemonList: PokemonListInfo[] = [];
   
   constructor(private router: Router, private _pokemonListService: PokemonListService) { }
 

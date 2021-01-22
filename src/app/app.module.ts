@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatDialogModule } from "@angular/material/dialog";
 import { MatGridListModule } from '@angular/material/grid-list';
 
 import { PokemonItemComponent } from './components/pokemon-item/pokemon-item.component';
@@ -34,7 +35,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     MatCardModule,
     MatAutocompleteModule,
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
 
   ],
   providers: [],
