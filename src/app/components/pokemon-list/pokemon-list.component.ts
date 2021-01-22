@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 import { Router } from "@angular/router";
 import { PokemonInfo } from './pokemon-list';
 import { PokemonListService } from "./pokemon-list.service";
@@ -12,16 +11,12 @@ import { PokemonListService } from "./pokemon-list.service";
 export class PokemonListComponent {
   public pokemonList: PokemonInfo[] = [];
 
- 
-
-  constructor(private router: Router, private _pokemonListService: PokemonListService) { }
+  constructor(private router: Router, private _pokemonListService: PokemonListService) {
+  }
 
   ngOnInit(): void {
-    this._pokemonListService.getPokemons()
-      .subscribe(data => this.pokemonList = data)
+    
   }
-  
-
 
 
 }

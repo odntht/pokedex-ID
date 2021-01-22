@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from "@angular/router";
+import { PokemonInfo } from '../pokemon-list/pokemon-list';
+import { PokemonListService } from "../pokemon-list/pokemon-list.service";
 
 @Component({
   selector: 'app-pokemon-item',
@@ -7,13 +9,16 @@ import { Router } from "@angular/router";
   styleUrls: ['./pokemon-item.component.css']
 })
 export class PokemonItemComponent implements OnInit {
-  @Input() message: string | undefined
-
-  constructor(private router: Router) { }
-
+  public pokemonList: PokemonInfo[] = [];
   
+  constructor(private router: Router, private _pokemonListService: PokemonListService) { }
 
   ngOnInit(): void {
+    this._pokemonListService.getPokemons()
+    .subscribe((data) => {
+      console.log(data);
+      this.pokemonList = data;
+    })
   }
 
   onSelect(pokemon:any){
