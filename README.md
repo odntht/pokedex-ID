@@ -2,7 +2,7 @@
 Projeto criado usando AngularCLI
 
 Desafio
-Crie um site que apresente a listagem das gerações de games doPokémon e seus respectivos detalhes (nome, número de pokémons,listagem de pokémons, etc).
+Crie um site que apresente a listagem das gerações de games do Pokémon e seus respectivos detalhes (nome, número de pokémons,listagem de pokémons, etc).
 
 ## Rodando o Projeto
 
